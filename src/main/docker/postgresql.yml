@@ -1,0 +1,11 @@
+version: '2'
+services:
+    design_pattern_examples-postgresql:
+        image: postgres:9.6.2
+        # volumes:
+        #     - ~/volumes/jhipster/design_pattern_examples/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=design_pattern_examples
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432

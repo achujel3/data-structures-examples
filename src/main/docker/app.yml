@@ -1,0 +1,14 @@
+version: '2'
+services:
+    design_pattern_examples-app:
+        image: design_pattern_examples
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:postgresql://design_pattern_examples-postgresql:5432/design_pattern_examples
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+        ports:
+            - 8080:8080
+    design_pattern_examples-postgresql:
+        extends:
+            file: postgresql.yml
+            service: design_pattern_examples-postgresql
