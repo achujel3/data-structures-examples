@@ -1,3 +1,3 @@
-# Data Structures Examples
+# Design Pattern Examples
 
-These are some of the data structure examples made with jHipster: Spring + Angular + PostgreSQL
+These are some of the design pattern examples made with jHipster: Spring + Angular + PostgreSQL
